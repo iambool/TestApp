@@ -1,4 +1,4 @@
-import { SkiaChart } from '../../components/Chart';
+import { SvgChart } from '../../components/Chart';
 import { ScrollView, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { useCallback, useEffect, useState } from 'react';
@@ -76,8 +76,8 @@ export default () => {
         <View style={styles.index_panel_content}>
           {actual.map(({ title, num, unit }) => (
             <View key={title} style={styles.sale_item}>
-              <View  style={styles.sale_item_cell}>
-                <Text  style={styles.sale_item_text}>{title}</Text>
+              <View style={styles.sale_item_cell}>
+                <Text style={styles.sale_item_text}>{title}</Text>
               </View>
               <View style={[styles.sale_item_cell, styles.num]}>
                 <Text style={styles.sale_item_num}>{num}</Text>
@@ -91,13 +91,13 @@ export default () => {
       </View>
       {chartList.map(([title, data, callback]) => (
         <View key={title}>
-        <View style={styles.index_panel_header}>
+          <View style={styles.index_panel_header}>
             <Text style={styles.index_panel_title}>{title}</Text>
+          </View>
+          <View style={styles.index_panel_content}>
+            <SvgChart option={data} onInit={callback} />
+          </View>
         </View>
-        <View style={styles.index_panel_content}>
-          <SkiaChart option={data} onInit={callback} />
-        </View>
-      </View>
       ))}
     </ScrollView>
   );

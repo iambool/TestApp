@@ -13,7 +13,7 @@ import {
   SVGRenderer,
   SvgChart as _SvgChart,
   SkiaChart as _SkiaChart,
-} from 'wrn-echarts';
+} from '@wuba/react-native-echarts';
 import { Dimensions } from 'react-native';
 
 // 注册需要用到的组件
@@ -59,10 +59,10 @@ const Chart = ({
   return <ChartComponent ref={chartRef} />;
 };
 
-const SkiaChart  = (props) => (
+const SkiaChart = (props) => (
   <Chart {...props} ChartComponent={_SkiaChart} />
 );
-const SvgChart  = (props) => (
+const SvgChart = (props) => (
   <Chart {...props} ChartComponent={_SvgChart} />
 );
 // 对外只暴露这哥俩就行

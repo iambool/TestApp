@@ -6,7 +6,7 @@ import { View } from 'react-native';
 import * as echarts from 'echarts/core';
 import { LineChart } from 'echarts/charts';
 import { GridComponent } from 'echarts/components';
-import { SVGRenderer, SkiaChart } from 'wrn-echarts';
+import { SVGRenderer, SkiaChart } from '@wuba/react-native-echarts';
 
 /**
  * 二、注册需要用到的组件

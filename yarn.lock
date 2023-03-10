@@ -1839,6 +1839,14 @@
     "@urql/core" ">=2.3.1"
     wonka "^4.0.14"
 
+"@wuba/react-native-echarts@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/@wuba/react-native-echarts/-/react-native-echarts-1.0.0.tgz#91da0b7e51c0b37e39d2903e0a25b7ddf2be7670"
+  integrity sha512-TBf/NrMYvy6vlyQHiCwaAIeYpC5ZKDCJjH+8Vl45ylBZeSVy7NO7c8TrrKmaUn/iL8QJbZlRGK0QAFfa/ELeEw==
+  dependencies:
+    "@xmldom/xmldom" "^0.8.6"
+    entities "^4.4.0"
+
 "@xmldom/xmldom@^0.8.6":
   version "0.8.6"
   resolved "https://registry.npmmirror.com/@xmldom/xmldom/-/xmldom-0.8.6.tgz#8a1524eb5bd5e965c1e3735476f0262469f71440"
@@ -6643,14 +6651,6 @@ write-file-atomic@^2.3.0:
     graceful-fs "^4.1.11"
     imurmurhash "^0.1.4"
     signal-exit "^3.0.2"
-
-wrn-echarts@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.npmmirror.com/wrn-echarts/-/wrn-echarts-0.1.5.tgz#428fe48ebda24e567679e8f4ed547bc0454eb661"
-  integrity sha512-LANBvcb8n94x7U/MlJu83CeKuBsyI2sthGQ3Ii5jzpAisgZQ6nK0Vr9GF00S5pXl1yQGbdWMYCzD0C4ADnSNyg==
-  dependencies:
-    "@xmldom/xmldom" "^0.8.6"
-    entities "^4.4.0"
 
 ws@^6.1.4:
   version "6.2.2"

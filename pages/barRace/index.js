@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import * as echarts from 'echarts/core';
 import { BarChart } from 'echarts/charts';
 import { GridComponent, LegendComponent } from 'echarts/components';
-import { SVGRenderer, SkiaChart, SvgChart } from 'wrn-echarts';
+import { SVGRenderer, SkiaChart, SvgChart } from '@wuba/react-native-echarts';
 import { Text, View } from 'react-native';
 
 // 注册需要用到的组件，BarChart-柱状图 LegendComponent-图例
@@ -82,8 +82,8 @@ export default () => {
   useEffect(() => {
     // Skia模式
     const skiaChartData = getData(); // 生成图表柱状图数据
-      let skiaChart;
-      let skiaInter;
+    let skiaChart;
+    let skiaInter;
     if (skiaRef.current) {
       skiaChart = echarts.init(skiaRef.current, 'light', {
         renderer: 'svg',

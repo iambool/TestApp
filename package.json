@@ -10,14 +10,14 @@
   },
   "dependencies": {
     "@shopify/react-native-skia": "0.1.157",
+    "@wuba/react-native-echarts": "^1.0.0",
     "echarts": "^5.4.1",
     "expo": "~47.0.12",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
     "react-native": "0.70.5",
     "react-native-status-bar-height": "^2.6.0",
-    "react-native-svg": "13.4.0",
-    "wrn-echarts": "^0.1.5"
+    "react-native-svg": "13.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
