@@ -3,6 +3,9 @@ import * as echarts from 'echarts/core';
 import { BarChart } from 'echarts/charts';
 import { GridComponent, LegendComponent } from 'echarts/components';
 import { SVGRenderer, SkiaChart, SvgChart } from '@wuba/react-native-echarts';
+// 注意：如果只安装了svg或skia，需要按如下方式单独引入
+// import _SkiaChart, { SVGRenderer } from '@wuba/react-native-echarts/skiaChart';
+// import _SvgChart, { SVGRenderer } from '@wuba/react-native-echarts/svgChart';
 import { Text, View } from 'react-native';
 
 // 注册需要用到的组件，BarChart-柱状图 LegendComponent-图例

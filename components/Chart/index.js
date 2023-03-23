@@ -14,6 +14,9 @@ import {
   SvgChart as _SvgChart,
   SkiaChart as _SkiaChart,
 } from '@wuba/react-native-echarts';
+// 如果只安装了svg或skia中的一个，需要按如下方式单独引入
+// import _SkiaChart, { SVGRenderer } from '@wuba/react-native-echarts/skiaChart';
+// import _SvgChart, { SVGRenderer } from '@wuba/react-native-echarts/svgChart';
 import { Dimensions } from 'react-native';
 
 // 注册需要用到的组件

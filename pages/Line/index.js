@@ -7,6 +7,9 @@ import * as echarts from 'echarts/core';
 import { LineChart } from 'echarts/charts';
 import { GridComponent } from 'echarts/components';
 import { SVGRenderer, SkiaChart } from '@wuba/react-native-echarts';
+// 注意：如果只安装了svg或skia，需要按如下方式单独引入
+// import _SkiaChart, { SVGRenderer } from '@wuba/react-native-echarts/skiaChart';
+// import _SvgChart, { SVGRenderer } from '@wuba/react-native-echarts/svgChart';
 
 /**
  * 二、注册需要用到的组件
